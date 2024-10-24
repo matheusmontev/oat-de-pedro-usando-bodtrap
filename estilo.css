@@ -1,0 +1,86 @@
+body {
+    background-image: url('https://via.placeholder.com/1600x900/ebf0f5/ffffff');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+#ddd-card {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 91, 187, 0.4);
+}
+
+#resultado .card {
+    border: none;
+    background-color: #f7f9fc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#loading {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.error-message {
+    color: #d9534f;
+}
+
+/* Estilos da lista de cidades */
+.city-list {
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+.city-list ul {
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.city-list ul li {
+    list-style: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: 400;
+}
+
+.city-list ul li:last-child {
+    border-bottom: none;
+}
+
+.city-list ul li::before {
+    content: "🌆";
+    margin-right: 8px;
+}
